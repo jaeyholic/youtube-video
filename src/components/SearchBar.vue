@@ -15,7 +15,19 @@
   }
 </script>
 
-<style>
+<style scoped>
+input {
+  width: 75%;
+  padding: 5px;
+}
 
+input[placeholder] {
+  margin-left: 20px;
+}
+
+div {
+  text-align: center;
+  margin: 20px;
+}
 </style>
 

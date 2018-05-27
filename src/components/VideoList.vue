@@ -1,6 +1,7 @@
 <template>
-    <ul>
-        <VideoListItem :key="video.etag" v-for="video in videos" :video="video"></VideoListItem>
+    <ul class="list-group col-md-4">
+        <VideoListItem :key="video.etag" v-for="video in videos" 
+        :video="video" @videoSelect="onVideoSelect"></VideoListItem>
     </ul> 
 </template>
 
@@ -12,7 +13,12 @@
         components: {
             VideoListItem
         },  
-        props: ['videos']
+        props: ['videos'],
+        methods: {
+            onVideoSelect(video) {
+                this.$emit('videoSelect', video);
+            }
+        }
     }
 </script>
 
