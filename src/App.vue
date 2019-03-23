@@ -13,7 +13,7 @@ import axios from 'axios';
 import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList';
 import VideoDetail from './components/VideoDetail';
-const API_KEY = 'AIzaSyCaxNb7xobQ35LXfxF9Yg-JTRybQQUW-aA';
+const API_KEY = 'AIzaSyDeMQyJfjoA5-jU-FzIYtEPDxSpUYsrWPU';
 
 export default {
   name: 'app',
